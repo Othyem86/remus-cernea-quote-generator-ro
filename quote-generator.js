@@ -11,7 +11,7 @@ function randomIndex(arr){
 function generateSentence(quoteObj) {
     let string = '';
     for (let set in quoteObj) {
-        let randomSubSet = randomIndex(set);
+        let randomSubSet = randomIndex(quoteObj[set]);
         string += (quoteObj[set][randomSubSet]);
     }
     return string;
@@ -89,7 +89,7 @@ const quoteDB = {
     ],
     setA5: [
         ", comportament abuziv. ",
-        ", violență în familie",
+        ", violență în familie. ",
         ", standarde de frumusețe promovate de mass-media. ",
         ", manspreading. ",
         ", gentrificare. ",
