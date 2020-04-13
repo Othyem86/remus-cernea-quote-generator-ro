@@ -17,9 +17,15 @@ function generateSentence(quoteObj) {
     return string;
 }
 
-// Parse random sentence to the DOM tree
+// Sound
+let sound = new Audio();
+sound.src = "./sound.mp3";
+
+// Play sound and parse random sentence to the DOM tree
 function generateQuote() {
+    
     document.getElementById("quote").innerText = generateSentence(quoteDB);
+    sound.play();
 }
 
 
