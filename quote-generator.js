@@ -26,6 +26,7 @@ function generateSentence(quoteObj) {
 function generateQuote() {
     document.getElementById("quote").innerText = generateSentence(quoteDB);
     let sound = new Audio(randomAudioSource());
+    sound.pause();
     sound.play();
 }
 
