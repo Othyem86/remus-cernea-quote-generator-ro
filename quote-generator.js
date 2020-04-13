@@ -7,6 +7,11 @@ function randomIndex(arr){
     return Math.floor(Math.random() * arr.length);
 }
 
+// Generate random sound
+function randomAudioSource() {
+    return './sound/sound' +  Math.floor(Math.random() * 14) + '.mp3';
+}
+
 // Generate random sentence
 function generateSentence(quoteObj) {
     let string = '';
@@ -17,14 +22,10 @@ function generateSentence(quoteObj) {
     return string;
 }
 
-// Sound
-let sound = new Audio();
-sound.src = "./sound.mp3";
-
 // Play sound and parse random sentence to the DOM tree
 function generateQuote() {
-    
     document.getElementById("quote").innerText = generateSentence(quoteDB);
+    let sound = new Audio(randomAudioSource());
     sound.play();
 }
 
