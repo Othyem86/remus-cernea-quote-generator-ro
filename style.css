@@ -149,15 +149,25 @@ button {
 
 @media screen and (max-width: 1225px) {
 	.introduction {
-		flex: 1;
+		flex: 2;
 	}
 
 	.cernea {
 		height: 70%;;
 	}
+
+	.intro-text p {
+		font-size: 20px;
+	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+	.introduction {
+		flex: 1;
+	}
+}
+
+@media screen and (max-width: 750px) {
 	.presentation {
 		flex-direction: column;
 	}
