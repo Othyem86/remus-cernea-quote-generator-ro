@@ -79,8 +79,6 @@ const quoteDB = {
         " stereotipuri de gen",
         " bigotism",
         " transfobie",
-        " bigotism",
-        " stereotipuri de gen"
     ],
     setA4: [
         ", structuri masculinizate",

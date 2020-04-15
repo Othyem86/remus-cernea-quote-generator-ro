@@ -14,7 +14,7 @@ header {
 	animation: drop 1.5s ease;
 }
 
-.header-container h1 {
+h1 {
 	font-size: 44px;
 	font-weight: 500;
 	background: linear-gradient(to right, #494964, #6f6f89);
@@ -148,6 +148,10 @@ button {
 }
 
 @media screen and (max-width: 1225px) {
+	h1 {
+		font-size: 38px;
+	}
+
 	.introduction {
 		flex: 2;
 	}
@@ -167,7 +171,21 @@ button {
 	}
 }
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	.cernea {
+		height: 50%;
+	}
+
+}
+
 @media screen and (max-width: 750px) {
+	h1 {
+		font-size: 32px;
+	}
+
+
 	.presentation {
 		flex-direction: column;
 	}
@@ -195,6 +213,17 @@ button {
 		display: none;
 	}
 
+	.cernea {
+		position: static;
+		width: 100%;
+	}
+
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
 	.cernea {
 		position: static;
 		width: 100%;
